@@ -5,7 +5,7 @@
     <title></title>
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
     <script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
-    <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -41,37 +41,61 @@
                 <!-- item - info -->
                 <div style="width:50%;text-align: center;height:45px;padding:10px 20px;overflow: hidden;float: left;">
                     <label style="float: left;">会员</label>
-                    <div style="float: left;border:0;border-bottom: 1px solid #000000;margin-left:20px;display: inline-block;width: 400px;">李先生</div>
+                    <div style="float: left;border:0;border-bottom: 1px solid #000000;margin-left:20px;">李先生</div>
                 </div>
                 <div style="width:50%;text-align: center;height:45px;padding:10px 20px;overflow: hidden;float: left;">
                     <label style="float: left;">车主电话</label>
-                    <label style="float: left;border:0;border-bottom: 1px solid #000000;margin-left:20px;">李先生</label>
+                    <label style="float: left;border:0;border-bottom: 1px solid #000000;margin-left:20px;">13000000001</label>
                 </div>
                 <div style="width:50%;text-align: center;height:45px;padding:10px 20px;overflow: hidden;float: left;">
                     <label style="float: left;">车牌号</label>
-                    <label style="float: left;border:0;border-bottom: 1px solid #000000;margin-left:20px;">李先生</label>
+                    <label style="float: left;border:0;border-bottom: 1px solid #000000;margin-left:20px;">川A E899A</label>
                 </div>
                 <div style="width:50%;text-align: center;height:45px;padding:10px 20px;overflow: hidden;float: left;">
                     <label style="float: left;">车辆种类</label>
-                    <label style="float: left;border:0;border-bottom: 1px solid #000000;margin-left:20px;">李先生</label>
+                    <label style="float: left;border:0;border-bottom: 1px solid #000000;margin-left:20px;">乘用车</label>
                 </div>
                 <div style="width:50%;text-align: center;height:45px;padding:10px 20px;overflow: hidden;float: left;">
                     <label style="float: left;">VIN码</label>
-                    <label style="float: left;border:0;border-bottom: 1px solid #000000;margin-left:20px;">李先生</label>
+                    <label style="float: left;border:0;border-bottom: 1px solid #000000;margin-left:20px;">IDJ293881J2J2</label>
                 </div>
                 <div style="width:50%;text-align: center;height:45px;padding:10px 20px;overflow: hidden;float: left;">
                     <label style="float: left;">车系</label>
-                    <label style="float: left;border:0;border-bottom: 1px solid #000000;margin-left:20px;">李先生</label>
+                    <label style="float: left;border:0;border-bottom: 1px solid #000000;margin-left:20px;">欧系</label>
                 </div>
                 <div style="width:50%;text-align: center;height:45px;padding:10px 20px;overflow: hidden;float: left;">
-                    <label style="float: left;">会员</label>
-                    <label style="float: left;border:0;border-bottom: 1px solid #000000;margin-left:20px;">李先生</label>
+                    <label style="float: left;">经销商</label>
+                    <label style="float: left;border:0;border-bottom: 1px solid #000000;margin-left:20px;">我是经销商</label>
                 </div>
-
+                <div style="width:50%;text-align: center;height:45px;padding:10px 20px;overflow: hidden;float: left;">
+                    <label style="float: left;">车型</label>
+                    <label style="float: left;border:0;border-bottom: 1px solid #000000;margin-left:20px;">三厢</label>
+                </div>
+                <div style="width:50%;text-align: center;height:45px;padding:10px 20px;overflow: hidden;float: left;">
+                    <label style="float: left;">经销商电话</label>
+                    <label style="float: left;border:0;border-bottom: 1px solid #000000;margin-left:20px;">0287272828</label>
+                </div>
+                <div style="width:50%;text-align: center;height:45px;padding:10px 20px;overflow: hidden;float: left;">
+                    <label style="float: left;">车辆颜色</label>
+                    <label style="float: left;border:0;border-bottom: 1px solid #000000;margin-left:20px;">白色</label>
+                </div>
+                <div style="width:50%;text-align: center;height:45px;padding:10px 20px;overflow: hidden;float: left;">
+                    <label style="float: left;">购车年份</label>
+                    <label style="float: left;border:0;border-bottom: 1px solid #000000;margin-left:20px;">20130809</label>
+                </div>
+                <div style="width:50%;text-align: center;height:45px;padding:10px 20px;overflow: hidden;float: left;">
+                    <label style="float: left;">最近保养里程</label>
+                    <label style="float: left;border:0;border-bottom: 1px solid #000000;margin-left:20px;">5000Km</label>
+                </div>
             </div>
         </div>
-
     </div>
+
+    <button id="ks" type="button" class="btn btn-info" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">添加我的爱车</button>
+
+    <script type="text/javascript">
+        $("#ks").popover('show');
+    </script>
 
 </body>
 </html>
