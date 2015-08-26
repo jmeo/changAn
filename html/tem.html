@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>[DIV+CSS]当层内容横向超过层的宽度时，如果控制它不换行</title>
+</head>
+<style type="text/css">
+    #rollBox{ width:500px; height:80px;}
+    #btn_left{ float:left}
+    #roll_Content{ float:left; width:340px; color:#FF0000; overflow:hidden;} <!-- 设置内容超出隐隐-->
+                                                                                  #btn_right{ float:left;}
+    img{ width:80px; height:80px;}
+    #content{ height::80px; width:10000px;}
+</style>
+
+<body>
+<div id="rollBox">
+    <div id="btn_left">
+        <!--向左移动按钮 -->
+        <img src="http://img5.ph.126.net/b3qIaH48i_QGQA7tJoRZ3Q==/1285496218654723655.jpg" />
+    </div>
+    <div id="roll_Content">
+        <div id="content">
+            <!-- 层内容实际已经超过层的宽度此处并没有换行显示 -->
+            <img src="http://img0.ph.126.net/2CTshKTLKG1X2YVEN69tDg==/2586755035988086140.jpg" />
+            <img src="http://img0.ph.126.net/2CTshKTLKG1X2YVEN69tDg==/2586755035988086140.jpg" />
+            <img src="http://img0.ph.126.net/2CTshKTLKG1X2YVEN69tDg==/2586755035988086140.jpg" />
+            <img src="http://img0.ph.126.net/2CTshKTLKG1X2YVEN69tDg==/2586755035988086140.jpg" />
+            <img src="http://img0.ph.126.net/2CTshKTLKG1X2YVEN69tDg==/2586755035988086140.jpg" />
+            <img src="http://img0.ph.126.net/2CTshKTLKG1X2YVEN69tDg==/2586755035988086140.jpg" />
+            <img src="http://img0.ph.126.net/2CTshKTLKG1X2YVEN69tDg==/2586755035988086140.jpg" />
+            <img src="http://img0.ph.126.net/2CTshKTLKG1X2YVEN69tDg==/2586755035988086140.jpg" />
+            <img src="http://img0.ph.126.net/2CTshKTLKG1X2YVEN69tDg==/2586755035988086140.jpg" />
+            <img src="http://img0.ph.126.net/2CTshKTLKG1X2YVEN69tDg==/2586755035988086140.jpg" />
+            <img src="http://img0.ph.126.net/2CTshKTLKG1X2YVEN69tDg==/2586755035988086140.jpg" />
+            <img src="http://img0.ph.126.net/2CTshKTLKG1X2YVEN69tDg==/2586755035988086140.jpg" />
+            <img src="http://img0.ph.126.net/2CTshKTLKG1X2YVEN69tDg==/2586755035988086140.jpg" />
+        </div>
+    </div>
+    <div id="btn_right">
+        <!--向右移动按钮-->
+        <img src="http://img1.ph.126.net/3ryJe_4WFjsTsc8njpkxlg==/52635820662054761.jpg" />
+    </div>
+
+</div>
+
+</body>
+</html>

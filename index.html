@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="./bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="./bower_components/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+<body>
+<!-- nav bar -->
+<div>
+    <ul class="nav nav-pills nav-stacked" style="width: 300px;" id="navBar">
+        <li role="presentation" class="active"><a href="#">会员管理</a></li>
+        <li role="presentation">
+            <a data-toggle="collapse" href="#carManage" ria-expanded="false" aria-controls="carManage">车辆管理</a>
+            <ul class="nav nav-pills nav-stacked collapse" id="carManage" style="margin-left: 20px;">
+                <li role="presentation"><a href="#">会员管理</a></li>
+                <li role="presentation">
+                    <a href="#">车辆管理</a>
+                </li>
+                <li role="presentation"><a href="#">活动聚焦</a></li>
+            </ul>
+        </li>
+        <li role="presentation"><a href="#">活动聚焦</a></li>
+    </ul>
+</div>
+
+<script>
+    $(function () {
+        $("li","#navBar").on('click',function(){
+            $("li","#navBar").removeClass('active');
+            $(this).addClass('active');
+        });
+        $("li","#carManage").on('click',function(){
+            $("li","#navBar").removeClass('active');
+            $(this).addClass('active');
+        });
+    });
+</script>
+
+</body>
+</html>
